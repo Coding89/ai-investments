@@ -19,9 +19,9 @@ from sqlalchemy import create_engine, text
 engine = create_engine('sqlite:///ai_investments.db', echo=False)
 
 #Loads CSV files
-df_prices = pd.read_csv('ai_financial_market_data.csv')
+df_prices = pd.read_csv(r'C:\Users\Mamiko\Desktop\Github\ai-investments\ai_financial_market_data.csv')
 
-df_companies = pd.read_csv('ai_financial_market_data.csv')
+df_companies = pd.read_csv(r'C:\Users\Mamiko\Desktop\Github\ai-investments\ai_financial_market_data.csv')
 
 #cleans the data by converting data strings to datetime etc
 df_prices.columns = [
