@@ -1,3 +1,8 @@
 ai_financial_market_data.csv
 venv/
 venv/*
+*.pbi
+cache.abf
+powerbi-visuals.Report/
+powerbi-visuals.SemanticModel/
+
