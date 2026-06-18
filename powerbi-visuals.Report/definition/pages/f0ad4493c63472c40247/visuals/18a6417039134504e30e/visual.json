@@ -195,10 +195,40 @@
               {
                 "textRuns": [
                   {
-                    "value": ""
+                    "value": "Meta (Facebook)"
                   }
                 ],
                 "listType": "ordered"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "OpenAI"
+                  }
+                ],
+                "listType": "ordered"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Alphabet (Google)"
+                  }
+                ],
+                "listType": "ordered"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
               }
             ]
           }
