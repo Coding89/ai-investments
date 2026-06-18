@@ -37,7 +37,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "This line chart describes the overall upward trend which notes that quarterly spending on R&D spending grew from $12 million per quarter in 2015 to nearly $25 million per quarter in 2024. Over double the initial amount."
+                    "value": "This line chart describes the overall upward trend of quarterly spending on R&D spending grew from $12 million per quarter in 2015 to nearly $25 million per quarter in 2024. Over double the initial amount. This represents the combined 3 companies' spending."
                   }
                 ]
               },
@@ -148,7 +148,7 @@
                     }
                   },
                   {
-                    "value": "The vertical gap between the dots become noticably wider as spending starts to accelerate."
+                    "value": "The vertical gap between the dots become noticeably wider as spending starts to accelerate."
                   }
                 ],
                 "listType": "bullet"
