@@ -37,7 +37,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "This line graph shows a steady and continuous increase in total Research and Development (R&D) spending into AI over a 9 year period from 2015 to 2024. This combines the overall spending of OpenAI, Google and Meta."
+                    "value": "This line chart describes the overall upward trend which notes that quarterly spending on R&D spending grew from $12 million per quarter in 2015 to nearly $25 million per quarter in 2024. Over double the initial amount."
                   }
                 ]
               },
@@ -78,7 +78,7 @@
                     }
                   },
                   {
-                    "value": " Spending rose steadily every single year."
+                    "value": " Highlights the explosive growth phases such as the sharp steepening of the curve around Q1-2023 through to 2024."
                   }
                 ],
                 "listType": "bullet"
@@ -92,49 +92,7 @@
                     }
                   },
                   {
-                    "value": " Total investments have nearly doubled over nearly a decade."
-                  }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "2015 baseline:",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": " Spending started at $49.30 billion ($49,304.23 million)."
-                  }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "2024 peak:",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": " Spending climbed to just under $100 billion ($98,760.08 million)"
-                  }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "Exponential Growth Trend:",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": " The spending follows an exponential curve with a rate of investment accelerating significantly in recent years."
+                    "value": " Total investments per quarter have doubled over nearly a decade."
                   }
                 ],
                 "listType": "bullet"
@@ -170,13 +128,13 @@
               {
                 "textRuns": [
                   {
-                    "value": "2015 to 2016: ",
+                    "value": "Flat periods/dips: ",
                     "textStyle": {
                       "fontWeight": "bold"
                     }
                   },
                   {
-                    "value": "The spending rate is slow."
+                    "value": "The spending rate is slowed down to coincide with global market events such as Covid in Q-2019 to Q3-2020."
                   }
                 ],
                 "listType": "bullet"
@@ -249,21 +207,7 @@
                     }
                   },
                   {
-                    "value": " Spending is highly likely to break through to $110 billion to $115K billion range as the curve steepens."
-                  }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "2026 Projection:",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": " The curve will likely \"moon\" surging past $130 billion - $140 billion."
+                    "value": " The steep slope at the end of Q4-2024 suggests that Q-12025 is highly likely to break $25 million per quarter if the momentum continues."
                   }
                 ],
                 "listType": "bullet"

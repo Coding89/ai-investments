@@ -23,30 +23,12 @@
                       "Entity": "Calendar"
                     }
                   },
-                  "Property": "Year"
+                  "Property": "Quarter"
                 }
               },
-              "queryRef": "Calendar.Year",
-              "nativeQueryRef": "Year",
+              "queryRef": "Calendar.Quarter",
+              "nativeQueryRef": "Quarter",
               "active": true
-            }
-          ]
-        },
-        "Series": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Calendar"
-                    }
-                  },
-                  "Property": "Year"
-                }
-              },
-              "queryRef": "Calendar.Year",
-              "nativeQueryRef": "Year"
             }
           ]
         },
@@ -82,10 +64,9 @@
                 "Property": "Total R&D Spending"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "drillFilterOtherVisuals": true
@@ -136,6 +117,34 @@
         },
         "type": "Advanced",
         "howCreated": "User"
+      },
+      {
+        "name": "a141880128a14975489c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Total R&D Spending"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0a43506121135a15213e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Quarter"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

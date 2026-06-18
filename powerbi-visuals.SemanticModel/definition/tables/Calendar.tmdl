@@ -57,6 +57,12 @@ table Calendar
 
 		annotation SummarizationSetBy = Automatic
 
+	column Quarter = "Q" & FORMAT('Calendar'[Date], "Q") & "-" & FORMAT('Calendar'[Date], "YYYY")
+		lineageTag: d3f5b175-6dde-414a-9ebf-8ff962def813
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendar = calculated
 		mode: import
 		source = ADDCOLUMNS(CALENDARAUTO(), "Year", YEAR([Date]), "Month", FORMAT([Date], "MMMM"), "MonthSort", MONTH([Date]))
