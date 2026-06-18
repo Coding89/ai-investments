@@ -89,51 +89,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "84553841197489a76a8e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "8a40ff447015be004e50",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ai_financial_market_data"
-              }
-            },
-            "Property": "Company"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f8f4187060d060770492",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Total R&D Spending"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

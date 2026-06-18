@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "233cdd7427d1cceea2a3",
+  "name": "18a6417039134504e30e",
   "position": {
-    "x": 983.34346504559278,
-    "y": 0,
-    "z": 1000,
-    "height": 663.34346504559278,
-    "width": 296.65653495440733,
+    "x": 9.72644376899696,
+    "y": 62.249240121580549,
+    "z": 2000,
+    "height": 625.41033434650456,
+    "width": 497.99392097264439,
     "tabOrder": 1000
   },
   "visual": {
@@ -19,9 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Summary",
+                    "value": "Project Brief",
                     "textStyle": {
                       "fontWeight": "bold",
+                      "fontSize": "20pt",
                       "textDecoration": "underline"
                     }
                   }
@@ -37,27 +38,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "This line chart describes the overall upward trend of quarterly spending on R&D spending grew from $12 million per quarter in 2015 to nearly $25 million per quarter in 2024. Over double the initial amount. This represents the combined 3 companies' spending."
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": ""
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "📈"
-                  },
-                  {
-                    "value": "Key Insights",
+                    "value": "Project Objective:",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "textDecoration": "underline"
+                      "fontSize": "14pt"
                     }
                   }
                 ]
@@ -72,44 +56,12 @@
               {
                 "textRuns": [
                   {
-                    "value": "Continuous Growth:",
+                    "value": "This workspace tracking ecosystem delivers a comprehensive financial autopsy of aggressive capital deployment in Artificial Intelligence by Alphabet (Google), Meta (FaceBook) and OpenAI.",
                     "textStyle": {
-                      "fontWeight": "bold"
+                      "fontSize": "12pt"
                     }
-                  },
-                  {
-                    "value": " Highlights the explosive growth phases such as the sharp steepening of the curve around Q1-2023 through to 2024."
                   }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "Near Doubling:",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": " Total investments per quarter have doubled over nearly a decade."
-                  }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "No dips:",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": " There have been no dips in spending. Only flatlining or growth."
-                  }
-                ],
-                "listType": "bullet"
+                ]
               },
               {
                 "textRuns": [
@@ -121,13 +73,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "📈"
-                  },
-                  {
-                    "value": "Minor Insights",
+                    "value": "Timeline Focus:",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "textDecoration": "underline"
+                      "fontSize": "14pt"
                     }
                   }
                 ]
@@ -142,44 +91,12 @@
               {
                 "textRuns": [
                   {
-                    "value": "Flat periods/dips: ",
+                    "value": "Analysing a 10 year historical trend line spanning 40 quarters (January 2015 to December 2024).",
                     "textStyle": {
-                      "fontWeight": "bold"
+                      "fontSize": "12pt"
                     }
-                  },
-                  {
-                    "value": "The spending rate is slowed down to coincide with global market events such as Covid in Q-2019 to Q3-2020."
                   }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "2019 to 2020: ",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": "The vertical gap between the dots become noticeably wider as spending starts to accelerate."
-                  }
-                ],
-                "listType": "bullet"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "2022 to 2024: ",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": "The curve bends sharply upward making much larger vertical jumps"
-                  }
-                ],
-                "listType": "bullet"
+                ]
               },
               {
                 "textRuns": [
@@ -191,16 +108,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "🚀 ",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  },
-                  {
-                    "value": "Predictions",
+                    "value": "Core Scopes Monitored:",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "textDecoration": "underline"
+                      "fontSize": "14pt"
                     }
                   }
                 ]
@@ -215,18 +126,101 @@
               {
                 "textRuns": [
                   {
-                    "value": "2025 Projection:",
+                    "value": "Total overall spending",
                     "textStyle": {
-                      "fontWeight": "bold"
+                      "fontSize": "12pt"
                     }
-                  },
-                  {
-                    "value": " The steep slope at the end of Q4-2024 suggests that Q-12025 is highly likely to break $25 million per quarter if the momentum continues."
                   }
                 ],
-                "listType": "bullet"
+                "listType": "ordered"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Total R&D spending by each company",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "listType": "ordered"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": " Side by side spending of each company",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "listType": "ordered"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Quarterly spending to analyse the spending trends of each company into AI projects.",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "listType": "ordered"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Companies:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ],
+                "listType": "ordered"
               }
             ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ]

@@ -117,34 +117,6 @@
         },
         "type": "Advanced",
         "howCreated": "User"
-      },
-      {
-        "name": "a141880128a14975489c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Total R&D Spending"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0a43506121135a15213e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Quarter"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

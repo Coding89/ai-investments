@@ -136,34 +136,6 @@
         },
         "type": "Advanced",
         "howCreated": "User"
-      },
-      {
-        "name": "91d3a21e53a7dee300ec",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "05da2cb6be9ebb033d6e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Total R&D Spending"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
