@@ -195,7 +195,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Meta (Facebook)"
+                    "value": "Meta (Facebook)",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
                   }
                 ],
                 "listType": "ordered"
@@ -203,7 +206,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "OpenAI"
+                    "value": "OpenAI",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
                   }
                 ],
                 "listType": "ordered"
@@ -211,7 +217,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Alphabet (Google)"
+                    "value": "Alphabet (Google)",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
                   }
                 ],
                 "listType": "ordered"
