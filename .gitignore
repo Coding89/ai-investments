@@ -1,7 +1,10 @@
 venv/
 venv/*
-*.pbi
 cache.abf
-powerbi_visuals_report/
-powerbi_visuals_semantic_model/
+
+#Power BI project:
+powerbi_visuals_report
+powerbi_visuals_semantic_model
+*.pbi
+**/.pbi/
 
