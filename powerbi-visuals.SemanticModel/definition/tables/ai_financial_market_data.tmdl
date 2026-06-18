@@ -1,0 +1,83 @@
+table ai_financial_market_data
+	lineageTag: 83ae3d2b-0250-4599-9af9-376d5df005ec
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 770416b0-4e83-4fa7-8558-5056d4cc497c
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Company
+		dataType: string
+		lineageTag: 87262280-f9f5-4f57-b5ff-41545544e780
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column R&D_Spending_USD_Mn
+		dataType: double
+		lineageTag: c97074da-b9ed-4ade-b671-dc0575515a36
+		summarizeBy: sum
+		sourceColumn: R&D_Spending_USD_Mn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AI_Revenue_USD_Mn
+		dataType: double
+		lineageTag: cdd24299-c786-46f3-a708-b7bb9f0724a5
+		summarizeBy: sum
+		sourceColumn: AI_Revenue_USD_Mn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AI_Revenue_Growth_%
+		dataType: double
+		lineageTag: 068f0c5e-9fcc-460a-8698-c29982662296
+		summarizeBy: sum
+		sourceColumn: AI_Revenue_Growth_%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Event
+		dataType: string
+		lineageTag: 959d1ab5-f90a-4b10-a536-6759a02b852c
+		summarizeBy: none
+		sourceColumn: Event
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stock_Impact_%
+		dataType: double
+		lineageTag: 501bd60c-ddbc-4cac-a7dd-c5ce4de27079
+		summarizeBy: sum
+		sourceColumn: Stock_Impact_%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition ai_financial_market_data = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Mamiko\Desktop\Github\ai-investments\ai_financial_market_data.csv"),[Delimiter=",", Columns=7, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Use First Row as Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Change Type" = Table.TransformColumnTypes(#"Use First Row as Headers",{{"Date", type date}, {"Company", type text}, {"R&D_Spending_USD_Mn", type number}, {"AI_Revenue_USD_Mn", type number}, {"AI_Revenue_Growth_%", type number}, {"Event", type text}, {"Stock_Impact_%", type number}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Change Type",{{"Company", "Company"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

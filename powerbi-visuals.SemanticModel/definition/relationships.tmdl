@@ -1,0 +1,9 @@
+relationship 215a730b-b522-4f45-bf82-08f0e782802d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.Date
+	toColumn: LocalDateTable_052fe2b8-9426-4e7d-95f3-3bd06a9e9d32.Date
+
+relationship dd1f105c-4931-7ecf-3b72-6f0e93a89298
+	fromColumn: ai_financial_market_data.Date
+	toColumn: Calendar.Date
+

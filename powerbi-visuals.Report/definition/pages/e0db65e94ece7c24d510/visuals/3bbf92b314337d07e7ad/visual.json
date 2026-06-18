@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "3bbf92b314337d07e7ad",
+  "position": {
+    "x": 9.72644376899696,
+    "y": 0,
+    "z": 0,
+    "height": 548.57142857142856,
+    "width": 1270.2735562310031,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "Year"
+                }
+              },
+              "queryRef": "Calendar.Year",
+              "nativeQueryRef": "Year",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ai_financial_market_data"
+                    }
+                  },
+                  "Property": "Company"
+                }
+              },
+              "queryRef": "ai_financial_market_data.Company",
+              "nativeQueryRef": "Company",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "Spending YoY Growth %"
+                }
+              },
+              "queryRef": "Calendar.Spending YoY Growth %",
+              "nativeQueryRef": "Spending YoY Growth %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "Total R&D Spending"
+                }
+              },
+              "queryRef": "Calendar.Total R&D Spending",
+              "nativeQueryRef": "Total R&D Spending"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c4760b166bb83ac229b8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Year"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e11c8d1edc400e3b6080",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ai_financial_market_data"
+              }
+            },
+            "Property": "Company"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "395c1da902093060c120",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Spending YoY Growth %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5142c966ac1ac5a93ab3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Total R&D Spending"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

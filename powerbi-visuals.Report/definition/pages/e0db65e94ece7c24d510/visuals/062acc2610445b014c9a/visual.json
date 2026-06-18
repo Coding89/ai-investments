@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "062acc2610445b014c9a",
+  "position": {
+    "x": 113.79939209726444,
+    "y": 265.53191489361706,
+    "z": 1001,
+    "height": 103.10030395136779,
+    "width": 349.17933130699089,
+    "tabOrder": 1001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Summary:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "textDecoration": "underline"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "This tab shows side by side R&D spending and YoY Growth % of Google, Meta and OpenAI per annum."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

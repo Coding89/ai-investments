@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f88600d700a2b3d085d7",
+  "position": {
+    "x": 849,
+    "y": 0,
+    "z": 2000,
+    "height": 545,
+    "width": 431,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Executive Summary: AI R&D Spending Trends (2015 - 2024)",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "textDecoration": "underline"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Google Dominates Total Volume: ",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "Google maintains the highest overall research and development budget throughout the entire decade. Its spending consistently scales $30 million in 2015 to a near peak of $55 million in 2024. Showing consistent YoY investments."
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Meta Shows Stable and Aggressive Growth:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Meta tracks closely behind Google with a consistent upwards trajectory. They successfully scaled their budget from under $20 million in 2015 to over $35 million in 2024."
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "OpenAI operates on a Lean Model:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " OpenAI's spending line remains completely flat and positioned at under $5 million for 2024. This highlights a hyper focused and capital efficient model compared to massive infrastructure of the two legacy tech giants."
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Unified Industry Surge:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " All three organizations show parallel growth curves without any historical dips, indicating a highly competitive race in AI market investments over 9 years."
+                  }
+                ],
+                "listType": "bullet"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

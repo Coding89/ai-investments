@@ -1,0 +1,21 @@
+model Model
+	culture: en-GB
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["ai_financial_market_data"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table ai_financial_market_data
+ref table DateTableTemplate_06e85bc9-3eec-4bbb-bd49-f01486c0da6d
+ref table Calendar
+ref table LocalDateTable_052fe2b8-9426-4e7d-95f3-3bd06a9e9d32
+
+ref cultureInfo en-GB
+

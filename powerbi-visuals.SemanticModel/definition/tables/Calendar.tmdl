@@ -1,0 +1,65 @@
+table Calendar
+	lineageTag: bd304ae3-1362-4d46-aa5c-fb8cc6c9fe62
+
+	measure 'Total R&D Spending' = ```
+			SUM('ai_financial_market_data'[R&D_Spending_USD_Mn]) 
+			```
+		lineageTag: 2d544c63-cef7-4734-9b50-fc68fcfb3f6c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Spending YoY Growth %' =
+			
+			VAR CurrentSpend = SUM('ai_financial_market_data'[R&D_Spending_USD_Mn])
+			VAR PriorYearSpend = CALCULATE(SUM('ai_financial_market_data'[AI_Revenue_USD_Mn]), SAMEPERIODLASTYEAR('Calendar'[Date]))
+			RETURN
+			DIVIDE(CurrentSpend - PriorYearSpend, PriorYearSpend)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 84fd8cb2-7fce-4d4f-bcb0-e8ec596d8245
+
+	column Date
+		formatString: General Date
+		lineageTag: 4228b674-cbca-49ab-b764-3a90ee1fbb65
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 215a730b-b522-4f45-bf82-08f0e782802d
+			defaultHierarchy: LocalDateTable_052fe2b8-9426-4e7d-95f3-3bd06a9e9d32.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 1062918c-7797-4186-b626-0efe8c33e435
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: 528501e8-7167-499c-a495-e378eec6d369
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthSort
+		formatString: 0
+		lineageTag: 7e4a28d8-fdd5-4ce8-b4bd-c44b44ed5007
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MonthSort]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = calculated
+		mode: import
+		source = ADDCOLUMNS(CALENDARAUTO(), "Year", YEAR([Date]), "Month", FORMAT([Date], "MMMM"), "MonthSort", MONTH([Date]))
+
+	annotation PBI_Id = f86b336d655344f58fda26d533295452
+
