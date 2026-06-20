@@ -1,6 +1,6 @@
 # AI Investments Data Pipleline
 
-## An automated Python data pipeline that ingests, cleans and stores open source data (from Kaggle) surrounding AI financial market datasets pertaining to Meta (Facebook), OpenAI and Alphabet (Google) from 2015 to 2014. The primary focus is on R&D and stock market YoY.
+## An automated Python data pipeline that ingests, cleans and stores open source data (from Kaggle) surrounding AI financial market datasets pertaining to Meta (Facebook), OpenAI and Alphabet (Google) from 2015 to 2014. The primary focus is on R&D and stock market YoY analysis using visuals like PowerBI, Matplotlib and Seaborn.
 ------
 ### Built With: ###
 
@@ -43,7 +43,7 @@ Work in progress
 
 ## Additional Information: ##
 
- Work in progress
+ - The open source data can be obtained from: https://www.kaggle.com/code/rohitgrewal/ai-financial-market-data-analysis (relevant as of 20th June 2026).
 ---------
 ## Disclaimer: ##
 
