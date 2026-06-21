@@ -13,7 +13,7 @@
 - ![Seaborn](https://img.shields.io/badge/-Seaborn-3776AB?style=flat&logo=python&logoColor=white&size=40x40)
 -------
 
-### The Problem: ###
+### Overview: ###
 
 Work in progress
 -------
@@ -22,12 +22,7 @@ Work in progress
 
 Work in progress
 
--------
-
-## The solution: Automated normalisation and consolidation of old and new formats (Technical guide) ##
-
-Work in progress
-  --------
+--------
 
   ## The solution (non-tech guide) ##
 
@@ -49,3 +44,4 @@ Work in progress
 
 1) No private details or data are shown.
 2) The open source data is from Kaggle and its reliability/accuracy must always be questioned.
+3) This project is only for personal use.
