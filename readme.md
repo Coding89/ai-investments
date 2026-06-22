@@ -34,8 +34,8 @@ Companies Analysed:
   ## Time Period ##
 
 - **Start Date**: January 1, 2015
-- ** End Date **: December 31, 2024
-- ** Duration **: 10 years
+- **End Date**: December 31, 2024
+- **Duration**: 10 years
 
 
 ---------
