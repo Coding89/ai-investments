@@ -5,11 +5,17 @@ import seaborn as sns
 #Loads the ai_financial_market_data.csv file
 df = pd.read_csv('ai_financial_market_data.csv')
 
+#Ensures format if the "Year" colum contains full dates (dd/mm/yyyy) and extracts the year first.
+df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y', errors='coerce'
+    df['Year'] = df['Year'].dt.year
+
 #Converts date strings from dd/mm/yyyy and pulls out the year
 df = df.dropna(subset=['Year'])
 df['Year'] = df['Year'].astype(int)
 
-yearly_spending = df.groupby(['Year', 'Company'])['R&D_spending_USD_Mn'].sum().reset_index()
+"""Visualisation 1: R&D Spending Trend"""
+
+yearly_spending = df.groupby(['Year', 'Company'])['R&D_Spending_USD_Mn'].sum().reset_index()
 
 # Generates a multo year trend line visualisation
 plt.figure(figsize=(10, 5.5))
@@ -33,3 +39,5 @@ plt.gca().xaxis.set_major_locator(plt.MaxNLocator(integer=True))
 plt.tight_layout()
 
 plt.show()
+
+
