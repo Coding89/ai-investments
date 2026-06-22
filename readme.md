@@ -56,14 +56,14 @@ The CSV file (ai_financial_market_data.csv) contains 10,960 lines of AI specific
 
 ## How to run ##
 
-**Prerequisites**
+**Prerequisites**:
 
 - Python 3.8 or newer
 - pip package manager
 - Power BI Desktop
 - Git
 
-**Installation**
+**Installation**:
 
 1) Clone the repository:
 
