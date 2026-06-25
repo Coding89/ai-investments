@@ -18,9 +18,8 @@ df['Year'] = df['Date'].dt.year
 df = df.dropna(subset=['Year'])
 df['Year'] = df['Year'].astype('int')
 
-"""
-The beginning of the pretty visualisations 1: R&D Spending Trend (Line plot)
-"""
+
+#The beginning of the pretty visualisations 1: R&D Spending Trend (Line plot)
 
 yearly_spending = df.groupby(['Year', 'Company'])['R&D_Spending_USD_Mn'].sum().reset_index()
 
@@ -47,9 +46,7 @@ plt.tight_layout()
 
 plt.show()
 
-"""
-Visualisation 2: Annual AI Revenue Comparison
-"""
+#Visualisation 2: Annual AI Revenue Comparison
 
 #Aggregates AI revenue by year and company
 yearly_revenue = df.groupby(['Year', 'Company'])['AI_Revenue_USD_Mn'].sum().reset_index()
@@ -66,7 +63,8 @@ plt.grid(axis='y', linestyle='--', alpha=0.5)
 plt.tight_layout()
 plt.show()
 
-"""Visualisation 3: Revenue Growth versus Stock Impact (Scatter Plot)"""
+#Visualisation 3: Revenue Growth versus Stock Impact (Scatter Plot)
+
 plt.figure(figsize=(10, 5.5))
 #plots scatterplot
 sns.scatterplot(
@@ -83,7 +81,3 @@ plt.ylabel('Stock Impact (%)', fontsize=12)
 plt.grid(True, linestyle=':', alpha=0.6)
 plt.tight_layout()
 plt.show()
-
-
-
-
