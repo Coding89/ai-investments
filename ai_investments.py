@@ -1,14 +1,14 @@
 """
 AI Investments Data Pipeline
 
-This script automates the process of loading AI financial market datasets from local CSV files.
+This script automates the process of loading AI financial market datasets from a local CSV file.
 The open source data is obtained from Kaggle. It stages and cleans the column schemas and streams
-the processed data directly into a local and permanent SQlite database file.
+the processed data directly into a local and permanent SQlite database file called "ai_investments.db".
 
 Additionally, the script alo includes verification layers that connect to the final database, executes relational SQL queries
 and automates summary statistics.
 
-Note that data from Kaggle is not always accurate, so please keep an eye out on the schema validation if it breaks + how accurate is this data?
+Note that data from Kaggle is not always accurate, so please keep an eye out on the schema validation if it breaks + always question how accurate is this data?
 
 Dependencies: pandas, sqlalchemy
 
