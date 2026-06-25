@@ -2,22 +2,34 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#Loads the ai_financial_market_data.csv file
+# makes the whitegrid look cleaner really
+plt.rcParams['figure.figsize'] = [10, 5.5]
+sns.set_style("whitegrid")
+
+# Loads the file and hope the encoding is fine
 df = pd.read_csv('ai_financial_market_data.csv')
 
-#Ensures format if the "Year" colum contains full dates (dd/mm/yyyy) and extracts the year first.
+# Cleans up the column names - usually the data is messed up in the source file
+df.columns = df.columns.str.strip()
+
+#Date parsing and assumes UK format (dd/mm/yyyy) and removes any rows missing years
 df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y', errors='coerce')
 df['Year'] = df['Date'].dt.year
+df = df.dropna(subset=['Year'])
+df['Year'] = df['Year'].astype('int')
+
 
 #Converts date strings from dd/mm/yyyy and pulls out the year
 df = df.dropna(subset=['Year'])
 df['Year'] = df['Year'].astype(int)
 
-"""Visualisation 1: R&D Spending Trend (Line plot)"""
+"""
+The beginning of the pretty visualisations 1: R&D Spending Trend (Line plot)
+"""
 
 yearly_spending = df.groupby(['Year', 'Company'])['R&D_Spending_USD_Mn'].sum().reset_index()
 
-# Generates a multi year trend line visualisation
+# line plot shows the growth over time
 plt.figure(figsize=(10, 5.5))
 sns.lineplot(
     data=yearly_spending,
@@ -40,11 +52,14 @@ plt.tight_layout()
 
 plt.show()
 
-"""Visualisation 2: Annual AI Revenue Comparison"""
+"""
+Visualisation 2: Annual AI Revenue Comparison
+"""
 
 #Aggregates AI revenue by year and company
 yearly_revenue = df.groupby(['Year', 'Company'])['AI_Revenue_USD_Mn'].sum().reset_index()
 
+#bar chart for clarity
 plt.figure(figsize=(10, 5.5))
 sns.barplot(
     data=yearly_revenue, x='Year', y='AI_Revenue_USD_Mn',
@@ -63,7 +78,7 @@ sns.scatterplot(
     data=df, x='AI_Revenue_Growth_%', y='Stock_Impact_%',
     hue='Company', style='Company', s=100, palette='deep')
 
-#Adds reference lines
+#Zero lines for reference
 plt.axhline(0, color='blue', linestyle='--', alpha=0.5)
 plt.axvline(0, color='blue', linestyle='--', alpha=0.5)
 
