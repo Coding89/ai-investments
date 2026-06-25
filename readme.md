@@ -113,6 +113,13 @@ The powerbi-visuals/ directory contains interactive PowerBI reports focused on A
 1) **Graph 1: AI R&D Spending Trend (Line Chart)**: Tracks the annual acceleration and velocity of coporate AI budgets by mapping individual company R&D expenditures from 2015 to 2024.
 2) **Graph 2: Annual AI Revenue Comparison (Grouped Bar Chart)**: Compares the financial market performance by clustering individual coporate AI revenues side by side for each year.
 3) **Graph 3: Revenue Growth versus Stock Impact (Scatter Plot)**: Analyses market announcements and economic correlation by mapping annual AI revenue growth rates directly against their resulting stock price percentage changes.
+-------
+
+** PowerBI Visuals **
+
+1) Total Spending:
+
+
 
 ---------
 ## Additional Information: ##
