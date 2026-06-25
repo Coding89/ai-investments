@@ -137,3 +137,4 @@ Source:
 1) No private details or data are shown.
 2) The open source data is from Kaggle and its reliability/accuracy must always be questioned.
 3) This project is only for personal use.
+4) This repository is for educational and personal project purposes only. The data, visualisations and analyses presented here do not constitute financial, investment or legal advice. The stock market data and financial metrics may be simulated, aggregated or delayed. No investment decisions should be made based on the contents of this project.
