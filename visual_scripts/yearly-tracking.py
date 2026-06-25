@@ -18,11 +18,6 @@ df['Year'] = df['Date'].dt.year
 df = df.dropna(subset=['Year'])
 df['Year'] = df['Year'].astype('int')
 
-
-#Converts date strings from dd/mm/yyyy and pulls out the year
-df = df.dropna(subset=['Year'])
-df['Year'] = df['Year'].astype(int)
-
 """
 The beginning of the pretty visualisations 1: R&D Spending Trend (Line plot)
 """
