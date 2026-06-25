@@ -1,3 +1,21 @@
+"""
+Summary:
+
+This scripts takes the raw 'ai_financial_market_data.csv' file, cleans it up (especially date formatting), 
+and builds three core charts to tell a story about how companies are handling the AI boom:
+
+1)R&D Spending Trend (Line plot): 
+    Tracks who is pumping the most money into AI R&D.
+    
+2) Annual AI Revenue Comparison: 
+    Compares their actual year to year AI revenues side by side.
+    
+3) Revenue Growth versus Stock Impact (Scatter Plot): 
+    Charts the revenue growth directly against stock market
+    movement to see if the AI hype actually translates to higher share prices.
+    
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
