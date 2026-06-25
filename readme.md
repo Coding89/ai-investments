@@ -103,10 +103,10 @@ python ai_investments.py
 
 The powerbi-visuals/ directory contains interactive PowerBI reports focused on AI investment analysis:
 
-1) **Total Spending** - Aggregate AI investment across all companies (2015 - 2024).
-2) **R&D Spending per Company** - Individual company breakdown of AI R&D expenditures.
+1) **Total Spending by Year and Year** - Aggregate AI investment across all companies (2015 - 2024).
+2) **Total Spend per Company** - Individual company breakdown of AI R&D expenditures.
 3) **Side by Side Spending** - Direct comparison of spending patterns across Meta, Alphabet and OpenAI.
-4) **Quarterly Spending Trends** - Time-series analysis of AI project investments by quarter.
+4) **Quarterly Spending** - Time-series analysis of AI project investments by quarter.
 
 **Matplotlib Visuals**
 
