@@ -20,7 +20,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# makes the whitegrid look cleaner really
+# makes the whitegrid look cleaner
 plt.rcParams['figure.figsize'] = [10, 5.5]
 sns.set_style("whitegrid")
 
@@ -82,12 +82,23 @@ plt.tight_layout()
 plt.show()
 
 #Visualisation 3: Revenue Growth versus Stock Impact (Scatter Plot)
+yearly_market_impact = df.groupby(['Year', 'Company'])[[
+    'AI_Revenue_Growth_%',
+    'Stock_Impact_%'
+]].mean().reset_index()
 
 plt.figure(figsize=(10, 5.5))
-#plots scatterplot
+
+#plots scatterplot and added a cleaner look as data looked all compressed
 sns.scatterplot(
-    data=df, x='AI_Revenue_Growth_%', y='Stock_Impact_%',
-    hue='Company', style='Company', s=100, palette='deep')
+    data=yearly_market_impact, 
+    x='AI_Revenue_Growth_%',
+    y='Stock_Impact_%',
+    hue='Company',
+    style='Company',
+    s=100, 
+    palette='deep'
+)
 
 #Zero lines for reference
 plt.axhline(0, color='blue', linestyle='--', alpha=0.5)
