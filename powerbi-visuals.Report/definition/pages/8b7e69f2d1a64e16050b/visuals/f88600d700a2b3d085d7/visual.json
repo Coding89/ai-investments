@@ -37,6 +37,37 @@
               {
                 "textRuns": [
                   {
+                    "value": "Summary:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "This line chart shoes the past decade of unified investment surge of the 3 companies scaling their budgets aggressively without any dips. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
                     "value": "Google Dominates Total Volume: ",
                     "textStyle": {
                       "fontWeight": "bold"

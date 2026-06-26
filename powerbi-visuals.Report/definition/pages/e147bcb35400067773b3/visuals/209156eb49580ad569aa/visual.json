@@ -37,7 +37,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "This line graph shows a steady and continuous increase in total Research and Development (R&D) spending into AI over a 9 year period from 2015 to 2024. This combines the overall spending of OpenAI, Google and Meta."
+                    "value": "This scatter plot shows a steady and continuous increase in total Research and Development (R&D) spending into AI over a 9 year period from 2015 to 2024. This combines the overall spending of OpenAI, Google and Meta."
                   }
                 ]
               },
@@ -190,7 +190,7 @@
                     }
                   },
                   {
-                    "value": "The vertical gap between the dots become noticably wider as spending starts to accelerate."
+                    "value": "The vertical gap between the dots become noticeably wider as spending starts to accelerate."
                   }
                 ],
                 "listType": "bullet"
