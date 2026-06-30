@@ -16,7 +16,7 @@
 ### Overview: ###
 
 This project provides a focused analysis of AI investment spending across three major technology companies: Meta Platforms, Inc (Facebook), Alphabet Inc. (Google) and OpenAI over a 10 year period from January 2015 to Dcember 2024.
-The analysis specifically examines R&D spending on AI projects, AI revenue generation and quaterly spending trends to understand how these industry leaders are investing in AI.
+The analysis specifically examines R&D spending on AI projects, AI revenue generation and quarterly spending trends to understand how these industry leaders are investing in AI.
 -------
 
 ### Analysis Scope ### 
@@ -76,20 +76,31 @@ The CSV file (ai_financial_market_data.csv) contains 10,960 lines of AI specific
  source venv/bin/activate
 
 3) Install required package:
-
-  pip intall -r requirements.txt
-
+```
+  pip install -r requirements.txt
+```
 4) Download the dataset
 
 5) Run the scripts
 
 The ai_investments.py script processes the raw CSV data and creates a SQLite database:
 
-#Activates the virtual environment
-source vev/bin/activate
+## Activates the virtual environment
 
-#Runs the data processing script
+Bash:
+```
+source venv/bin/activate
+```
+
+DOS:
+```
+venv\Scripts\activate.bat
+```
+
+## Runs the data processing script:
+```
 python ai_investments.py
+```
 
 **Results**:
 
