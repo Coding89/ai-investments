@@ -35,7 +35,7 @@ Companies Analysed:
 
 - **Start Date**: 1 January 2015
 - **End Date**: 31 December 2024
-- **Duration**: 10 years
+- **Duration**: 10 years (daily tracking)
 
 
 ---------
@@ -67,13 +67,19 @@ The CSV file (ai_financial_market_data.csv) contains 10,960 lines of AI specific
 
 1) Clone the repository:
 
-   git clone https://github.com
+   git clone https://github.com](https://github.com/Coding89/ai-investments
    cd ai-investments
 
 2) Set up Python virtual environment:
 
+```
+#MAC OS/Linux 
  python -m venv venv
  source venv/bin/activate
+
+#Windows
+venv\Scripts\activate.bat
+```
 
 3) Install required package:
 ```
@@ -85,19 +91,6 @@ The CSV file (ai_financial_market_data.csv) contains 10,960 lines of AI specific
 
 The ai_investments.py script processes the raw CSV data and creates a SQLite database:
 
-## Activates the virtual environment
-
-Bash:
-```
-source venv/bin/activate
-```
-
-DOS:
-```
-venv\Scripts\activate.bat
-```
-
-## Runs the data processing script:
 ```
 python ai_investments.py
 ```
