@@ -1,6 +1,6 @@
 # AI Investments Data Pipleline
 
-## An automated Python data pipeline that ingests, cleans and stores open source data (from Kaggle) surrounding AI financial market datasets pertaining to Meta Platforms, Inc (Facebook), Alphabet Inc. (Google), and OpenAI from 2015 to 2014. The primary focus is on R&D and stock market YoY analysis using visuals like PowerBI, Matplotlib and Seaborn.
+## An automated Python data pipeline that ingests, cleans and stores open source data (from Kaggle) surrounding AI financial market datasets pertaining to Meta Platforms, Inc (Facebook), Alphabet Inc. (Google), and OpenAI from 1st January 2015 to 24th December 2024. The primary focus is on R&D and stock market YoY analysis using visuals like PowerBI, Matplotlib and Seaborn.
 ------
 ### Built With: ###
 
@@ -44,13 +44,13 @@ Companies Analysed:
 
 The CSV file (ai_financial_market_data.csv) contains 10,960 lines of AI specific financial data including:
 
-- **Date**: Timeline from 2015 to 2024
-- **Company**: Meta (FaceBook), Google and OpenAI
-- **R&D_Spending_USD_Mn**: Research &Development spending in millions (USD)
-- **AI_Revenue_US_Mn**: AI generated revenue in the millions (USD)
-- **AI_Revenue_Growth%**: Percentage growth of AI Revenue
-- **Event** - Significant AI related events like "AI Ethics Policy Update"
-- **Stock_Impact_%**: Stock price impact percentage
+- **Date**: Timeline from 2015 to 2024.
+- **Company**: Meta (FaceBook), Alphabet Inc. (Google) and OpenAI.
+- **R&D_Spending_USD_Mn**: Research & Development spending in millions (USD).
+- **AI_Revenue_US_Mn**: AI generated revenue in the millions (USD).
+- **AI_Revenue_Growth%**: Percentage growth of AI Revenue.
+- **Event**: Significant AI related events like "AI Ethics Policy Update".
+- **Stock_Impact_%**: Stock price impact percentage.
 
 ---------
 
@@ -72,12 +72,13 @@ The CSV file (ai_financial_market_data.csv) contains 10,960 lines of AI specific
 
 2) Set up Python virtual environment:
 
+### Bash: ###
 ```
-#MAC OS/Linux 
  python -m venv venv
  source venv/bin/activate
-
-#Windows
+```
+### Windows: ###
+```
 venv\Scripts\activate.bat
 ```
 
@@ -133,5 +134,4 @@ Source:
 
 1) No private details or data are shown.
 2) The open source data is from Kaggle and its reliability/accuracy must always be questioned.
-3) This project is only for personal use.
-4) This repository is for educational and personal project purposes only. The data, visualisations and analyses presented here do not constitute financial, investment or legal advice. The stock market data and financial metrics may be simulated, aggregated or delayed. No investment decisions should be made based on the contents of this project.
+3) Educational Use Only: This repository is for personal and educational use only. The data, visualisations and analyses presented here do not constitute financial, investment or legal advice. The stock market data and financial metrics may be simulated, aggregated or delayed. No investment decisions should be made based on the contents of this project.
